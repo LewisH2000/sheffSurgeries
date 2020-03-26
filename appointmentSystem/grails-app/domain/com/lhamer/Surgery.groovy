@@ -10,5 +10,15 @@ String description
 String openingTime
 
     static constraints = {
+name blank:false
+address blank:false
+postcode blank:false
+telephone blank:false
+numberOfPatients blank:false
+numberOfPatients max:1000
+description blank:false
+description maxSize:5000
+description widget:'textarea'
+openingTime blank:false
     }
 }
