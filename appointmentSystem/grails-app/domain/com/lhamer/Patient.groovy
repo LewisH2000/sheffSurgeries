@@ -8,6 +8,15 @@ Date patientDob
 String patientID
 Date dateRegistered
 int patientPhone
+Appointment appointment
+
+String toString(){
+return Appointment
+}
+
+static hasMany=[prescription:Prescription, surgery:Surgery]
+
+static belongsTo=[Doctor]
 
 
     static constraints = {

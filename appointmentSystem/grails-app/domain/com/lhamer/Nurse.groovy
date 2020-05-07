@@ -7,6 +7,10 @@ String nurseEmail
 String nurseOffice
 int nursePhone
 
+static hasMany=[doctor:Doctor]
+
+static belongTo=[Doctor]
+
     static constraints = {
 nurseName blank:false
 qualifications blank:false

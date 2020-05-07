@@ -9,6 +9,10 @@ int numberOfPatients
 String description
 String openingTime
 
+static hasMany=[receptionsit:Receptionsit, nurse:Nurse]
+
+static belongsTo=[Patient]
+
     static constraints = {
 name blank:false
 address blank:false
